@@ -28,5 +28,17 @@ int main() {
         if (min == DiasMin[i])
             cout<<"Dia "<<i+1<<endl;
     }
+    double temp;
+    int c = 0;
+    cout<<"--Encontrar temperatura maxima--"<<endl;
+    cout<<"ingrese temperatura: "; cin>>temp;
+    for (int i = 0; i < 7; i++) {
+        if (temp == DiasMax[i]) {
+            cout<<"Dia "<<i+1<<endl;
+            c = c + 1;
+        }
+    }
+    if (c == 0)
+        cout<<"Ningun dia tiene esa temperatura maxima";
     return 0;
 }
